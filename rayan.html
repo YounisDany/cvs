@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background-color: #6c757d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .section-title {
+            font-weight: bold;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header animate__animated animate__fadeInDown">
+            <h1>ريان فضي سليمان الرشيدي</h1>
+            <p>مطور ويب</p>
+        </div>
+
+        <!-- Personal Summary -->
+        <div class="section animate__animated animate__fadeInUp">
+            <h2 class="section-title">لمحة شخصية</h2>
+            <p>أنا شخص مبتكر يعشق تطوير البرمجيات وتصميم واجهات المستخدم. أسعى دائماً لتعزيز مهاراتي التقنية والشخصية.</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="section animate__animated animate__fadeInUp">
+            <h2 class="section-title">التواصل</h2>
+            <ul>
+                <li><strong>العنوان:</strong> المملكة العربية السعودية</li>
+                <li><strong>الهاتف:</strong> 0551234267</li>
+                <li><strong>البريد الإلكتروني:</strong> qwer1100900@icloud.com</li>
+            </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section skills animate__animated animate__fadeInUp">
+            <h2 class="section-title">المهارات</h2>
+            <ul>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+                <li>إجادة الحاسب الآلي</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section animate__animated animate__fadeInUp">
+            <h2 class="section-title">التعليم</h2>
+            <p>الكلية التقنية بالحائط - ما زال يدرس</p>
+        </div>
+
+        <!-- Languages -->
+        <div class="section animate__animated animate__fadeInUp">
+            <h2 class="section-title">اللغات</h2>
+            <ul>
+                <li><strong>اللغة العربية:</strong> اللغة الأم</li>
+                <li><strong>اللغة الإنجليزية:</strong> جيد جداً</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
