@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيرة ذاتية - عبدالسلام متعب الرشيدي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJxn+zP5G0HhL9iY1n1lbkBLZpZ2n6e1TltKsuWJ5Qn3gfD0PQj5es13Tj+d" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+        }
+        .profile-img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .section-content {
+            margin-top: 10px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        h1, p {
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header" data-aos="fade-down">
+            <h1>عبدالسلام متعب الرشيدي</h1>
+            <p class="lead">مطور ويب - مبرمج محترف</p>
+            <img src="https://via.placeholder.com/200" alt="عبدالسلام" class="profile-img" data-aos="zoom-in">
+        </div>
+
+        <div class="section-content" data-aos="fade-up">
+            <h3 class="section-title">معلومات الاتصال</h3>
+            <ul class="contact-info">
+                <li><strong>العنوان:</strong> المملكة العربية السعودية</li>
+                <li><strong>الهاتف:</strong> 0535817123</li>
+                <li><strong>البريد الإلكتروني:</strong> bnmkh112233@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="section-content" data-aos="fade-up">
+            <h3 class="section-title">المهارات</h3>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Bootstrap, jQuery, React</li>
+                <li>PHP, MySQL</li>
+                <li>Git, GitHub, Version Control</li>
+                <li>API Integration, RESTful services</li>
+            </ul>
+        </div>
+
+        <div class="section-content" data-aos="fade-up">
+            <h3 class="section-title">لمحة شخصية</h3>
+            <p>أمتلك شغفاً كبيراً لتطوير تطبيقات الويب والمواقع التفاعلية باستخدام أحدث التقنيات. أؤمن بأن البرمجة ليست مجرد كتابة أكواد، بل هي فن لتطوير حلول مبتكرة تلبي احتياجات المستخدمين بشكل فعال. أحب التعلم المستمر ومواكبة كل جديد في هذا المجال، وأحب العمل الجماعي والتعاون مع الفرق المختلفة لتحقيق أهداف المشروع بكفاءة.</p>
+        </div>
+
+        <div class="section-content" data-aos="fade-up">
+            <h3 class="section-title">نبذة باللغة الإنجليزية</h3>
+            <p>I am a passionate web developer who specializes in front-end and back-end web development. I am experienced in working with technologies such as HTML5, CSS3, JavaScript, and Bootstrap, and I have strong knowledge of PHP and MySQL for backend development. I am committed to delivering high-quality solutions and continuously learning new skills in this dynamic field. I believe in collaboration and teamwork to achieve project success.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Um3w7BKhYDLRe8TcFryRvi0kFlZzxWJ7l7DnybI6T0zZ06t" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out-back',
+            once: true
+        });
+    </script>
+</body>
+</html>
