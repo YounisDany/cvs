@@ -27,7 +27,7 @@
 
         .header {
             position: relative;
-            height: 400px; /* يمكن تعديل الارتفاع */
+            height: 400px;
             text-align: center;
             color: white;
             overflow: hidden;
@@ -46,7 +46,7 @@
 
         .header .text-overlay {
             position: relative;
-            z-index: 2; /* فوق الصورة */
+            z-index: 2;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -59,6 +59,48 @@
         .header p {
             font-weight: 400;
             font-size: 1.2rem;
+        }
+
+        .product-section {
+            background: #f8f9fa;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .product-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-section h2 {
+            font-size: 2rem;
+            margin: 20px 0 10px;
+            color: #d32f2f;
+        }
+
+        .product-section .price {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .product-section .price del {
+            color: #888;
+            margin-left: 10px;
+        }
+
+        .product-section button {
+            background: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-section button:hover {
+            background: #a02121;
         }
 
         footer {
@@ -80,15 +122,17 @@
     </div>
 </div>
 
-<!-- About Section -->
-<section class="container my-5">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2 class="fw-bold mb-4 animate__animated animate__fadeInUp">من نحن</h2>
-            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">
-                منذ تأسيسها عام 1902، تُعد 3M رائدة في تطوير مجموعة واسعة من المنتجات المبتكرة التي تخدم قطاعات متعددة حول العالم.
-            </p>
-        </div>
+<!-- Product Section -->
+<section class="product-section">
+    <div class="container">
+        <img src="file-Rj4ywTXYRET5xKKbSgffyo.jpeg" alt="حماية واجهة السيارة">
+        <h2>حماية واجهة السيارة</h2>
+        <p class="price">
+            <del>3864 ريال</del>
+            <strong>1932 ريال</strong>
+        </p>
+        <p>لا تفوت الفرصة! خصومات تصل إلى 50% على منتجات 3M.</p>
+        <button onclick="alert('تم إرسال طلبك بنجاح!')">احجز الآن</button>
     </div>
 </section>
 
