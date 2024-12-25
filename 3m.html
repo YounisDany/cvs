@@ -25,70 +25,40 @@
             line-height: 1.6;
         }
 
-        header {
-            background: #d32f2f;
-            color: white;
-            padding: 50px 0;
+        .header {
+            position: relative;
+            height: 400px; /* يمكن تعديل الارتفاع */
             text-align: center;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/3-M_Building_Maplewood_MN1.jpg/1280px-3-M_Building_Maplewood_MN1.jpg');
-            background-size: cover;
-            background-position: center;
-            filter: blur(3px) brightness(50%);
+            color: white;
+            overflow: hidden;
         }
 
-        header h1 {
+        .header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(3px) brightness(50%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .header .text-overlay {
+            position: relative;
+            z-index: 2; /* فوق الصورة */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .header h1 {
             font-weight: 600;
-            margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        header p {
+        .header p {
             font-weight: 400;
             font-size: 1.2rem;
-        }
-
-        .offer-section {
-            position: relative;
-            background-image: url('https://via.placeholder.com/1920x1080?text=%D8%AA%D8%B8%D9%84%D9%8A%D9%84+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9');
-            background-size: cover;
-            background-position: center;
-            filter: blur(3px) brightness(60%);
-            height: 400px;
-            color: white;
-            text-align: center;
-        }
-
-        .offer-section .text-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-
-        .offer-section h2 {
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        .offer-section p {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .offer-section button {
-            background: #d32f2f;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease-in-out;
-        }
-
-        .offer-section button:hover {
-            background: #a02121;
         }
 
         footer {
@@ -102,19 +72,13 @@
 <body>
 
 <!-- Header Section -->
-<header class="animate__animated animate__fadeIn">
-    <h1>شركة 3M</h1>
-    <p>نبتكر اليوم لنرتقي بالغد</p>
-</header>
-
-<!-- Offer Section -->
-<section class="offer-section">
-    <div class="text-overlay animate__animated animate__zoomIn">
-        <h2>عرض خاص: تظليل السيارة</h2>
-        <p>بسعر يبدأ من <strong>500 ريال</strong> فقط!</p>
-        <button onclick="alert('تم إرسال طلبك بنجاح!')">احجز الآن</button>
+<div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/3-M_Building_Maplewood_MN1.jpg/1280px-3-M_Building_Maplewood_MN1.jpg" alt="3M Building">
+    <div class="text-overlay">
+        <h1 class="animate__animated animate__fadeIn">شركة 3M</h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">نبتكر اليوم لنرتقي بالغد</p>
     </div>
-</section>
+</div>
 
 <!-- About Section -->
 <section class="container my-5">
